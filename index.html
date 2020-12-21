@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel='stylesheet' href="static/css/style.css">
+    <title>Javascript on Steroids</title>
+</head>
+<body>
+    <div class="container-1">
+        <h2>Challenge 1: Your age in Days</h2>
+        <div class="flex-box-container-1">
+            <div>
+                <button class="btn btn-primary" onclick="ageindays()">Click me</button>
+            </div>
+
+            <div>
+                <button class="btn btn-danger" onclick="reset()">Reset</button>
+            </div>
+        </div>
+
+        <div class="flex-box-container-1">
+            <div id='flex-box-result'></div>
+        </div>
+    </div>
+
+    <div class="container-2">
+        <h2>Challenge 2: Cat Generator</h2>
+        <button class="btn btn-success" onclick="generate_cat()">generate cat</button>
+        <div class="flex-box-container-2">
+        </div>
+    </div>
+
+    <div class="container-3">
+        <h2>Challenge 3: Rock, Paper, Scissors</h2>
+        <div class="flex-box-rps" id="flex-box-rps-div">
+            <img id="rock" src="https://3dwarehouse.sketchup.com/warehouse/v1.0/publiccontent/ef6c2b20-cd40-4767-8211-c088d56bb5f3" height="150" width="150" onclick="rpsGame(this)">
+            <img id="paper" src="https://images-na.ssl-images-amazon.com/images/I/61OorFhm6SL.jpg" height="150" width="150" onclick="rpsGame(this)">
+            <img id="scissors" src="http://simpleicon.com/wp-content/uploads/scissors.png" height="150" width="150" onclick="rpsGame(this)">
+        </div>
+    </div>
+
+    <div class="container-4">
+        <h2 id="change-my-color">Challenge 4: Change the Color of All Buttons!</h2>
+        <div class="flex-box-pick-color">
+            <form action="">
+                <select name="backdrop" id="background" onchange="buttonColorChange(this)">
+                    <option value="random">random</option>
+                    <option value="red">red</option>
+                    <option value="green">green</option>
+                    <option value="reset">reset</option>
+                </select>
+            </form>
+            <button class="btn btn-primary">Wee!</button>
+            <button class="btn btn-danger">Yahoo!</button>
+            <button class="btn btn-warning">Google!</button>
+            <button class="btn btn-success">Facebook</button>
+        </div>
+    </div>
+        
+    <script src='./static/js/script.js'></script>
+</body>
+</html>
